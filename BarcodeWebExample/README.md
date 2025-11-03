@@ -80,6 +80,18 @@ Deploy this example to Ivy's hosting platform:
 
 This will deploy your barcode generation application with a single command.
 
+## Docker
+
+Build and run with Docker:
+
+```bash
+cd BarcodeWebExample
+docker build -t barcodelib-example .
+docker run -p 8080:80 barcodelib-example
+```
+
+The Dockerfile includes font dependencies for SkiaSharp text rendering and exposes port 80.
+
 ## Learn More
 
 - BarcodeLib GitHub repository: [github.com/barnhill/barcodelib](https://github.com/barnhill/barcodelib)
